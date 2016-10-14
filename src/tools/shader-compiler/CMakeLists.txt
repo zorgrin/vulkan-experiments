@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.1)
+
+PROJECT(glsl-compiler CXX)
+
+FIND_PACKAGE(Qt5Core 5.5 REQUIRED)
+
+
+
+SET(HEADER_FILES
+    
+)
+
+SET(SOURCE_FILES
+    main.cpp
+)
+
+ADD_EXECUTABLE(${PROJECT_NAME}
+    ${SOURCE_FILES}
+    ${HEADER_FILES}
+)
+
+TARGET_LINK_LIBRARIES(${PROJECT_NAME}
+    ${QT_LIBRARIES}
+    ${Qt5Core_LIBRARIES}
+)
